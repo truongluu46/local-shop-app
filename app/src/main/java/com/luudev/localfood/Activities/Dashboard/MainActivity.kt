@@ -1,4 +1,4 @@
-package com.luudev.localfood
+package com.luudev.localfood.Activities.Dashboard
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

@@ -30,7 +30,7 @@ import com.luudev.localfood.R
 fun MyBottomBar() {
     val bottomMenuItemsList = prepareBottomMenu()
     val context = LocalContext.current
-    var selected by remember { mutableStateOf("Home") }
+    var selected by remember { mutableStateOf("Support") }
 
     BottomAppBar(
         backgroundColor = colorResource(R.color.white),

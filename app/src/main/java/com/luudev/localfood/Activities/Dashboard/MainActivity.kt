@@ -39,6 +39,8 @@ fun DashboardScreen(){
                 .fillMaxSize()
                 .background(color = colorResource(R.color.lightBlue))
                 .padding(paddingValues)
-        ) { }
+        ) {
+            item{ TopBar()}
+        }
     }
 }

@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.luudev.localfood.R
 import com.luudev.localfood.ui.theme.LocalFoodTheme
 
@@ -30,6 +31,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 @Preview
 fun DashboardScreen(){
+    val systemUiController = rememberSystemUiController()
+    systemUiController.setSystemBarsColor(color = colorResource(id=R.color.blue))
     Scaffold(
         bottomBar = { MyBottomBar()}
     ) {

@@ -1,6 +1,7 @@
-package com.luudev.localfood.Activities.Dashboard
+package com.luudev.localfood.activities.dashboard
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -20,9 +21,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.luudev.localfood.Domain.CategoryModel
+import com.luudev.localfood.domain.CategoryModel
 import com.luudev.localfood.R
-import com.luudev.localfood.Repository.DashboardRepository
+import com.luudev.localfood.repository.DashboardRepository
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +49,7 @@ fun DashboardScreen(){
 
     LaunchedEffect(Unit) {
         viewModel.loadCategory().observeForever {
+            Log.d("Dashboard", "categories size = ${it.size}")
             categories.clear()
             categories.addAll(it)
             showCategoryLoading=false

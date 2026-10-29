@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LocalFood">
         <activity
-            android:name=".Activities.Dashboard.MainActivity"
+            android:name=".activities.dashboard.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.LocalFood"

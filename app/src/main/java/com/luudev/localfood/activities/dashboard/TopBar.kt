@@ -1,4 +1,4 @@
-package com.luudev.localfood.Activities.Dashboard
+package com.luudev.localfood.activities.dashboard
 
 
 

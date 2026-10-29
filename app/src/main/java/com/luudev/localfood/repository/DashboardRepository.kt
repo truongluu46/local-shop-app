@@ -1,4 +1,4 @@
-package com.luudev.localfood.Repository
+package com.luudev.localfood.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.luudev.localfood.Domain.CategoryModel
+import com.luudev.localfood.domain.CategoryModel
 
 class DashboardRepository {
 

@@ -1,4 +1,4 @@
-package com.luudev.localfood.Domain
+package com.luudev.localfood.domain
 
 data class CategoryModel(
     var Id:Int=0,

@@ -1,7 +1,7 @@
-package com.luudev.localfood.ViewModel
+package com.luudev.localfood.viewmodel
 
 import androidx.lifecycle.LiveData
-import com.luudev.localfood.Domain.CategoryModel
+import com.luudev.localfood.domain.CategoryModel
 
 class DashboardViewModel {
     private val repository = DashboardViewModel()
